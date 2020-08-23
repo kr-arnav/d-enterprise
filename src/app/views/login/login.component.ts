@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { LoginService } from './login.service';
+import { LoginService } from '@services/login.service';
 import { LocalstorageService } from '@services/localstorage.service';
 import { NavigatorService } from '@services/navigator.service';
 

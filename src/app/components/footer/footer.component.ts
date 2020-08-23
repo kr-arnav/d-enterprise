@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ContactPerson, LocationServed } from '@models/index';
-import { CommonService } from '@services/common.service';
+import { FooterService } from '@services/footer/footer.service';
 
 @Component({
   selector: 'app-footer',
@@ -21,7 +21,7 @@ export class FooterComponent implements OnInit {
   developer: string = "Developed by Arnav Kumar (this.arnav@gmail.com)";
 
   constructor(
-    private commonService: CommonService
+    private footerService: FooterComponent
   ) { }
 
   ngOnInit(): void {
@@ -32,14 +32,14 @@ export class FooterComponent implements OnInit {
   // @Desc: Requesting for Contact details
   // @From: CommonService
   getContactPerson(): void {
-    this.commonService.getContactPersons()
+    this.footerService.getContactPersons()
       .subscribe(contactPerson => this.contactPersons = contactPerson);
   }
 
   // @Desc: Requesting for locaitons served
   // @From: CommonService
   getLocationServed(): void {
-    this.commonService.getLocationsServed()
+    this.footerService.getLocationsServed()
       .subscribe(locationsServed => this.locationsServed = locationsServed);
   }
 
