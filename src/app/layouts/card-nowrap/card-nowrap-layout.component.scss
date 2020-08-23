@@ -1,0 +1,20 @@
+.card {
+    &:hover {
+        //background: darken($color: white, $amount: 10%);
+        box-shadow: 5px 5px 4px #bbbbbb;
+        transition: 0.5s ease;
+    }
+    // image for the card, used as a background
+    img {
+        height: 200px;
+    }
+    // content of the card
+    .card-body {
+        .car-title {
+        }
+        .card-text {
+        }
+        .btn {
+        }
+    }
+}

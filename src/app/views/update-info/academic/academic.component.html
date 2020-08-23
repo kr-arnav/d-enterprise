@@ -1,0 +1,107 @@
+<section>
+    <div class="container">
+        <form #regForm='ngForm' (ngSubmit)="register()">
+
+            <app-mid-title [title]="title"></app-mid-title>
+
+            <!-- 12th details -->
+            <app-subtitle title="12th / PUC / +2"></app-subtitle>
+            <div ngModelGroup="twelfth">
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        College / School<input type="text" class="form-control" name="tname"
+                            [(ngModel)]="aInfo.twelfth.name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        Year of Passing<input type="number" class="form-control" name="tyear"
+                            [(ngModel)]="aInfo.twelfth.yearOfPassing" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        Percentage / CGPA<input type="number" class="form-control" placeholder="Example: 70 or 9.3"
+                            name="tmarks" [(ngModel)]="aInfo.twelfth.marks" required>
+                    </div>
+                </div>
+            </div>
+            
+            <app-hr></app-hr>
+
+            <!-- Graduation Details -->
+            <app-subtitle title="Diploma / Graduation"></app-subtitle>
+            <div ngModelGroup="diplomaOrGraduation">
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        College / School<input type="text" class="form-control" name="dname"
+                            [(ngModel)]="aInfo.diplomaOrGraduation.name">
+                    </div>
+                    <div class="form-group col-md-12">
+                        Stream / Branch / Specialization<input type="text" class="form-control" name="dspecialization"
+                            [(ngModel)]="aInfo.diplomaOrGraduation.specialization">
+                    </div>
+                    <div class="form-group col-md-6">
+                        Year of Passing<input type="number" class="form-control" name="dyear"
+                            [(ngModel)]="aInfo.diplomaOrGraduation.yearOfPassing">
+                    </div>
+                    <div class="form-group col-md-6">
+                        Percentage / CGPA<input type="number" class="form-control" placeholder="Example: 70 or 9.3"
+                            name="dmarks" [(ngModel)]="aInfo.diplomaOrGraduation.marks">
+                    </div>
+                </div>
+            </div>
+
+            <app-hr></app-hr>
+
+            <!-- Post-Graduation details -->
+            <app-subtitle title="Post Graduation"></app-subtitle>
+            <div ngModelGroup="postGraduation">
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        College Name<input type="text" class="form-control" name="pname"
+                            [(ngModel)]="aInfo.postGraduation.name">
+                    </div>
+                    <div class="form-group col-md-12">
+                        Stream / Branch / Specialization<input type="text" class="form-control" name="pspecialization"
+                            [(ngModel)]="aInfo.postGraduation.specialization">
+                    </div>
+                    <div class="form-group col-md-6">
+                        Year of Passing<input type="number" class="form-control" name="pyear"
+                            [(ngModel)]="aInfo.postGraduation.yearOfPassing">
+                    </div>
+                    <div class="form-group col-md-6">
+                        Percentage / CGPA<input type="number" class="form-control" placeholder="Example: 70 or 9.3"
+                            name="pmarks" [(ngModel)]="aInfo.postGraduation.marks">
+                    </div>
+                </div>
+            </div>
+            
+            <app-hr></app-hr>
+
+            <!-- Other Qualification Details -->
+            <app-subtitle title="Other Qualification"></app-subtitle>
+            <div ngModelGroup="other">
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        College Name<input type="text" class="form-control" name="oname" [(ngModel)]="aInfo.other.name">
+                    </div>
+                    <div class="form-group col-md-12">
+                        Stream / Branch / Specialization<input type="text" class="form-control" name="ospecialization"
+                            [(ngModel)]="aInfo.other.specialization">
+                    </div>
+                    <div class="form-group col-md-6">
+                        Year of Passing<input type="number" class="form-control" name="oyear"
+                            [(ngModel)]="aInfo.other.yearOfPassing">
+                    </div>
+                    <div class="form-group col-md-6">
+                        Percentage / CGPA<input type="text" class="form-control" placeholder="Percentage or CGPA"
+                            name="omarks" placeholder="Example: 70 or 9.3" [(ngModel)]="aInfo.other.marks">
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <!-- Submit and navigate to 'Professional Information' form -->
+            <div class="align-center">
+                <button type="submit" class="btn btn-dark form-control">Next</button>
+            </div>
+        </form>
+    </div>
+</section>

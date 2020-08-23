@@ -1,0 +1,29 @@
+<section id="carouselContainer" class="carousel slide" data-ride="carousel">
+
+  <!-- Carousel Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carouselContainer" *ngFor="let card of cards; let i = index" attr.data-slide-to="{{ i }}"
+      [ngClass]="{'active': i == 0}"></li>
+  </ol>
+
+  <!-- Carousel Cards -->
+  <div class="carousel-inner">
+    <div *ngFor="let card of cards; let i = index" [ngClass]="{'active': i==0 ,'carousel-item': true}">
+      <app-carousel-card-layout [card]="card" class="d-block w-100"></app-carousel-card-layout>
+    </div>
+  </div>
+
+  <!-- Next Previous Symbols -->
+
+  <!-- Previous -->
+  <a class="carousel-control-prev" href="#carouselContainer" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+
+  <!-- Next -->
+  <a class="carousel-control-next" href="#carouselContainer" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</section>

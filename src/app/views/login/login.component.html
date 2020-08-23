@@ -1,0 +1,28 @@
+<section appContainerLightTheme>
+    <div class="container col-lg-4 col-md-8 col-sm-12">
+        <div>
+            <app-page-title title="{{ title }}"></app-page-title>
+            <form #loginForm='ngForm' (ngSubmit)="login(loginForm.value)">
+                <br />
+                <div>
+
+                    <!-- Mobile Nu. for logging-->
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Mobile" name="mobile" ngModel>
+                    </div>
+
+                    <!-- Password for logging-->
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Password" name="password" ngModel>
+                    </div>
+                    <br />
+
+                    <!-- Submit button for loggign-->
+                    <div class="align-center">
+                        <button appBtnDarkTheme type="submit" class="btn form-control">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

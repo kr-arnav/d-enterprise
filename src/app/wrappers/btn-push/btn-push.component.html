@@ -1,0 +1,13 @@
+<section appBtnDarkTheme class="mb-4">
+    <span *ngFor="let btn of btns">
+        <app-btn-push-layout [btn]="btn">
+        </app-btn-push-layout>
+    </span>
+    <span class="spacer"></span>
+    <span *ngIf="btnsRight != null">
+        <span *ngFor="let btnRight of btnsRight">
+            <app-btn-push-layout [btn]="btnRight">
+            </app-btn-push-layout>
+        </span>
+    </span>
+</section>

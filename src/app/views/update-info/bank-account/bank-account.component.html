@@ -1,0 +1,63 @@
+<section class="a-container">
+    <div class="container">
+        <div>
+            <form #regForm='ngForm' (ngSubmit)="register()">
+                
+                <app-mid-title [title]="title"></app-mid-title>
+
+                <app-subtitle title="Account Details"></app-subtitle>
+                <div>
+
+                    <!-- Account Number -->
+                    <div class="form-group">
+                        Account No.<input type="text" class="form-control" name="accountNumber"
+                            [(ngModel)]="aInfo.accountNumber">
+                    </div>
+
+                    <!-- Bank Name -->
+                    <div class="form-group">
+                        Bank Name<input type="text" class="form-control" name="bankName"
+                            [(ngModel)]="aInfo.bankName">
+                    </div>
+
+                    <!-- Branch Name -->
+                    <div class="form-group">
+                        Branch Name<input type="text" class="form-control" name="branchName"
+                            [(ngModel)]="aInfo.branchName">
+                    </div>
+
+                    <!-- IFSC Code -->
+                    <div class="form-group">
+                        IFSC Code<input type="text" class="form-control" name="ifscCode"
+                            [(ngModel)]="aInfo.ifscCode">
+                    </div>
+
+                    <!-- Account Holder Name-->
+                    <div class="form-group">
+                        Account Holder's Name<input type="text" class="form-control"
+                            name="accountHolderName" [(ngModel)]="aInfo.accountHolderName">
+                    </div>
+
+                    <!-- PAN Card Number -->
+                    <div class="form-group">
+                        PAN Card No.<input type="text" class="form-control" name="panCardNo"
+                            [(ngModel)]="aInfo.panCardNo">
+                    </div>
+
+                    <!-- A Short Note-->
+                    <div class="form-group">
+                        <p class="">NOTE: PHOTOCOPY OF ALL THE DOCUMENTS NEED TO BE DULY SIGNED AND
+                            SUBMITTED ALONG WITH
+                            CANCELLED CHEQUE.</p>
+                    </div>
+                </div>
+                <br />
+
+                <!-- Subnit and move to 'Declaration' form-->
+                <div class="align-center">
+                    <button type="submit" class="btn btn-dark form-control" id="register">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,13 @@
+<!-- clients.component.html -->
+<!-- Wrapper for clients-->
+<div class="row">
+    <!-- One header for all the clients-->
+    <div class="col-md-12 p-4">
+        <h4 class="text-center">&mdash;&mdash; Our Clients &mdash;&mdash;</h4>
+    </div>
+    <!-- list of clients from the database-->
+    <div class="img-container" *ngFor="let card of cards">
+        <!-- Image for the client -->
+        <app-card-img-layout [card]='card'></app-card-img-layout>
+    </div>
+</div>

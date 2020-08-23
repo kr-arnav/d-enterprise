@@ -1,0 +1,66 @@
+.link-map {
+    //background: lighten(black, 90%);
+    //background: #333;
+    //color: white;
+    padding: 10px 30px;
+}
+.item {
+    margin-top: 10px;
+}
+.b-card{
+    margin-bottom: 20px;
+}
+
+code {
+    color: white;
+    font-size: small;
+}
+
+img{
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.dev {
+    background: white;
+    width: 70%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .item-btn{
+        display: inline;
+        margin-right: 5px;
+        cursor: pointer;
+        &:hover{
+            background: lighten($color: #000000, $amount: 40%);
+        }
+    }
+    .item{
+        background: lighten($color: #000000, $amount: 30%);
+        padding: 7px 18px;
+        margin-top: 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .social-text{
+        //margin-top: 150px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .social-text{
+        margin-top: 70px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .social-text{
+        //margin-top: 150px;
+    }
+}

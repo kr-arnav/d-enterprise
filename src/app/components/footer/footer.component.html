@@ -1,0 +1,60 @@
+<section class="link-map" appContainerDarkTheme>
+    <div class="row">
+        <!-- Service List -->
+        <div class="b-card col-xl-2 col-md-3 col-sm-12 col-xs-12">
+            <h4>Outsource</h4><hr class="bg-light">
+            <div class="col-md-12 col-sm-4 item item-btn">
+                People
+            </div>
+            <div class="col-md-12 col-sm-4 item item-btn">
+                Venue
+            </div>
+            <div class="col-md-12 col-sm-4 item item-btn">
+                Gadgets
+            </div>
+        </div>
+        <!-- Service Location List -->
+        <div class="b-card col-xl-2 col-md-3 col-sm-12 col-xs-12">
+            <h4>Location</h4><hr class="bg-light">
+            <div *ngFor="let location of locationsServed" class="item">{{ location.name }}</div>
+        </div>
+        <!-- Contact Persons List -->
+        <div class="b-card col-xl-3 col-md-3 col-sm-12 col-xs-12">
+            <div *ngFor="let contactPerson of contactPersons">
+                <h4>Contact</h4><hr class="bg-light">
+                <div class="item">
+                    <div>
+                        <a>Name: {{ contactPerson.name }}</a>
+                    </div>
+                    <div>
+                        <a>Contact No: {{ contactPerson.contact }}</a>
+                    </div>
+                    <div>
+                        <a>Email Id: {{ contactPerson.email }}</a>
+                    </div>
+                    <div>
+                        <a>PAN NO: {{ contactPerson.pan }}</a>
+                    </div>
+                    <div>
+                        <a>GSTIN NO: {{ contactPerson.gstn }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Social Links-->
+        <div class="b-card col-xl-5 col-md-3 col-sm-12 col-xs-12 text-center">
+            <div>
+                <div class="social-text">Getting Social is the best way to connect<br>
+                    Just call, post or tweet for all your outsourcing needs</div>
+                <a href="#">
+                    <img src="../../assets/fb.png" class="mr-4" alt="">
+                    <img src="../../assets/twitter.png" class="mr-4" alt="">
+                    <img src="../../assets/insta.png" alt="">
+                </a>
+
+                <div class="social-text"><code>{{ developer }}</code></div>
+                <hr class="dev">
+            </div>
+        </div>
+    </div>
+</section>

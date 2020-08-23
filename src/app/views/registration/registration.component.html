@@ -1,0 +1,9 @@
+<section appContainerLightTheme>
+    <div class="container col-lg-4 col-md-8 col-sm-12">
+        <div>
+            <app-page-title title="{{ title | titlecase }}"></app-page-title>
+            <app-btn-push [btns]="btns" (click)="updateTitle()"></app-btn-push>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</section>

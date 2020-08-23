@@ -1,0 +1,8 @@
+<!-- card.component.html -->
+<!-- One Row to contain all cards-->
+<div appContainerLightTheme class="row">
+    <!-- Rendering all cards from the database -->
+    <div class="col-lg-3 col-md-4 col-xs-12 col-sm-6 c-container" *ngFor="let card of cards">
+        <app-card-nowrap-layout [card]="card"></app-card-nowrap-layout>
+    </div>
+</div>

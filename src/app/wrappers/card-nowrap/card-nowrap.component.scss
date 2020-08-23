@@ -1,0 +1,59 @@
+// card.component.scss
+
+// main container of the html - row
+.row {
+    //background: darken($color: #7575dd, $amount: 10%);
+    width: 100%;
+    margin: auto;
+    // sub container of the html - c-container
+    .c-container {
+        padding: 40px 30px !important;
+        // holds all sections of the card
+        .card {
+            &:hover {
+                //background: darken($color: white, $amount: 10%);
+                box-shadow: 5px 5px 4px #bbbbbb;
+                transition: 0.5s ease;
+            }
+            // image for the card, used as a background
+            img {
+                height: 200px;
+            }
+            // content of the card
+            .card-body {
+                .car-title {
+                }
+                .card-text {
+                }
+                .btn {
+                }
+            }
+        }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .row {
+        padding: 0 30px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .row {
+        padding: 0 30px;
+    }
+}

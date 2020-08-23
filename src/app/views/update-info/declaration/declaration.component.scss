@@ -1,0 +1,19 @@
+.container {
+    padding: 0;
+}
+hr {
+    border-top: 1px solid lighten($color: black, $amount: 60%);
+}
+.tnc {
+    height: 270px;
+    overflow-y: auto;
+    background: white;
+    padding: 20px 30px 20px 0;
+}
+ol {
+    font-size: 12px;
+}
+label {
+    font-size: 12px;
+    font-weight: bold;
+}

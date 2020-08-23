@@ -1,0 +1,55 @@
+<div class="a-container">
+    <div class="container">
+        <div>
+            <form #regForm='ngForm' (ngSubmit)="register()">
+                
+                <app-mid-title [title]="title"></app-mid-title>
+
+                <!-- Current Organisation -->
+                <app-subtitle title="Current Organisation"></app-subtitle>
+                <app-hr></app-hr>
+
+                <div ngModelGroup='currentOrganisation'>
+
+                    <!-- Organisation Name -->
+                    <div class="form-group">
+                        Organisation Name<input type="text" class="form-control" name="organisationName"
+                            [(ngModel)]="pInfo.organisationName">
+                    </div>
+
+                    <!-- Designation -->
+                    <div class="form-group">
+                        Designation<input type="text" class="form-control" placeholder="Designation"
+                            [(ngModel)]="pInfo.designation">
+                    </div>
+
+                    <!-- Nature Of Work -->
+                    <div class="form-group">
+                        Nature of Work<input type="text" class="form-control" name="natureOfWork"
+                            [(ngModel)]="pInfo.natureOfWork">
+                    </div>
+
+                    <!-- From Date, To Date & Total Experience -->
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            From<input type="text" class="form-control" name="fromDate" [(ngModel)]="pInfo.fromDate">
+                        </div>
+                        <div class="form-group col-md-4">
+                            To Month<input type="number" class="form-control" name="toDate" [(ngModel)]="pInfo.toDate">
+                        </div>
+                        <div class="form-group col-md-4">
+                            Total Experience in Month<input type="number" class="form-control"
+                                name="totalExperienceInMonth" [(ngModel)]="pInfo.totalExperienceInMonth">
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <!-- Subnit and move to 'Bank Account Informaiton' -->
+                <div class="align-center">
+                    <button type="submit" class="btn btn-dark form-control" id="register">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<!-- header.component.html -->
+
+<!-- wrapper for header-->
+<section appContainerDarkTheme>
+    <!-- sub-wrapper for header-->
+    <span class="container">
+        <!-- Branding -->
+        <span class="a-logo" routerLink="/">Dummy <span>Enterprises</span></span>
+        <!-- spacer between branding and navigation-->
+        <span class="spacer"></span>
+        <!-- navigation for large screen view -->
+        <span class="navigation" *ngIf="screenWidth > 1000; else el">
+            <!-- screenWidth > 1000 -->
+            <span routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/"
+                class="link">HOME</span>
+            <span routerLinkActive="active" routerLink="/about" class="link">ABOUT US</span>
+            <!-- <span routerLinkActive="active" routerLink="/contact" class="link">CONTACT US</span> -->
+            <span *ngIf="!loggedIn" routerLinkActive="active" routerLink="/registration" class="link-u">Register</span>
+            <span *ngIf="!loggedIn" routerLinkActive="active" routerLink="/login" class="link-u">Login</span>
+            <span class="dropdown" *ngIf="loggedIn">
+                <i class="fas fa-user btn dropdown-toggle text-white" data-toggle="dropdown"></i>
+                <ul class="dropdown-menu">
+                    <li><span routerLink="/update-info/dashboard" class="link">Dashboard</span></li>
+                    <span (click)="logout()" class="link-u">Log Out</span>
+                </ul>
+            </span>
+        </span>
+        <!-- navigation for mobile screen -->
+        <ng-template #el>
+            <div id="mySidenav" class="sidenav el" (click)="closeNav()">
+                <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+                <div routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/" class="link">
+                    HOME</div>
+                <div routerLinkActive="active" routerLink="/about" class="link">ABOUT US</div>
+                <!-- <div routerLinkActive="active" routerLink="/contact" class="link">CONTACT US</div> -->
+                <div *ngIf="!loggedIn" routerLinkActive="active" routerLink="/registration" class="link">Register</div>
+                <div *ngIf="!loggedIn" routerLinkActive="active" routerLink="/login" class="link">Login</div>
+                <div *ngIf="loggedIn" routerLinkActive="active" routerLink="/update-info/personal" class="link">Personal
+                    Information</div>
+                <div *ngIf="loggedIn" routerLinkActive="active" routerLink="/update-info/academic" class="link">Academic
+                    Information</div>
+                <div *ngIf="loggedIn" routerLinkActive="active" routerLink="/update-info/professional" class="link">
+                    Professional Information</div>
+                <div *ngIf="loggedIn" routerLinkActive="active" routerLink="/update-info/bank-account" class="link">Bank
+                    Information</div>
+                <div *ngIf="loggedIn" routerLinkActive="active" routerLink="/update-info/declaration" class="link">
+                    Declaration</div>
+                <div *ngIf="loggedIn" routerLinkActive="active" routerLink="/update-info/dashboard" class="link">
+                    Dashboard</div>
+                <div *ngIf="loggedIn" (click)="logout()" routerLinkActive="active" routerLink="/update-info/dashboard"
+                    class="link">Logout</div>
+            </div>
+            <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;</span>
+        </ng-template>
+    </span>
+</section>
