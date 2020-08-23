@@ -5,7 +5,7 @@ import { User } from '@models/index';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '@environments/environment';
 
-import { LocalstorageService } from '../../services/localstorage.service';
+import { LocalstorageService } from '../services/localstorage.service';
 
 @Injectable({
   providedIn: 'root'

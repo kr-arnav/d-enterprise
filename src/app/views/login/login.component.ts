@@ -41,7 +41,11 @@ export class LoginComponent implements OnInit {
           this.localStorageService.setLocalStorage('mobile', userFormValue.mobile);
           this.navigationService.navigate('/update-info');
         }
-      })
+      },
+      err => {
+        console.log(JSON.stringify(err.error))
+      }
+      )
   }
 
 }

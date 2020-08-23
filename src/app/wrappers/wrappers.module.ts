@@ -13,6 +13,8 @@ import { MobileNavbarComponent } from './mobile-navbar/mobile-navbar.component';
 import { SubtitleComponent } from './subtitle/subtitle.component';
 import { HrComponent } from './hr/hr.component';
 import { MidTitleComponent } from './mid-title/mid-title.component';
+import { RegesterWrapComponent } from './regester-wrap/regester-wrap.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,13 +27,15 @@ import { MidTitleComponent } from './mid-title/mid-title.component';
     MobileNavbarComponent,
     SubtitleComponent,
     HrComponent,
-    MidTitleComponent
+    MidTitleComponent,
+    RegesterWrapComponent
   ],
   imports: [
     CommonModule,
     LayoutsModule,
     RouterModule,
-    DirectivesModule
+    DirectivesModule,
+    FormsModule
   ],
   exports: [
     CarouselComponent,
@@ -43,7 +47,8 @@ import { MidTitleComponent } from './mid-title/mid-title.component';
     MobileNavbarComponent,
     SubtitleComponent,
     HrComponent,
-    MidTitleComponent
+    MidTitleComponent,
+    RegesterWrapComponent
   ]
 })
 export class WrapperModule { }

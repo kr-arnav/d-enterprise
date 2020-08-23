@@ -1,0 +1,37 @@
+<form #regForm (ngSubmit)="register()" autocomplete="off">
+    <br />
+    <div>
+
+        <!-- Mobile No. for logging as freelancer -->
+        <div class="form-group">
+            <input type="text" pattern="[0-9]*" class="form-control" placeholder="Mobile" name="user.mobile"
+                #mobile="ngModel" [(ngModel)]="user.mobile" minlength="10" maxlength="10" ngModel required>
+            <div *ngIf="mobile.invalid" class="error">
+                <span *ngIf="mobile.touched && user.mobile.length == 0">Please enter a value</span>
+                <span *ngIf="mobile.dirty && mobile.touched && user.mobile.length != 0">10 characters are
+                    required | {{user.mobile.length}} / 10</span>
+            </div>
+        </div>
+
+        <!-- Password for logging as freelancer -->
+        <div class="form-group">
+            <input type="password" pattern="^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+                class="form-control" placeholder="Password" name="user.password" #password="ngModel"
+                [(ngModel)]="user.password" ngModel required>
+            <div *ngIf="password.invalid" class="error">
+                <span *ngIf="password.touched && user.password.length == 0">Please enter a value</span>
+                <span *ngIf="password.dirty && password.touched && user.password.length != 0">Password should include
+                    Uppercase, lowercase, number and special character of minimum length 1</span>
+            </div>
+        </div>
+        <br />
+        <!-- Submit button for logging as freelancer -->
+        <div class="align-center">
+            <button appBtnDarkTheme type="submit" class="btn form-control"
+                [disabled]="!(mobile.valid && password.valid)">Register</button>
+        </div>
+        <div *ngIf="error" class="error">
+            {{ error }}
+        </div>
+    </div>
+</form>

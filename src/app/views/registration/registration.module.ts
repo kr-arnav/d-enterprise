@@ -4,8 +4,8 @@ import { RegistrationRoutingModule } from './registration-routing.module';
 import { RegistrationComponent } from './registration.component';
 import { FreelancerComponent } from './freelancer/freelancer.component';
 import { VendorComponent } from './vendor/vendor.component';
-import { RegistrationService } from './registration.service';
 import { SharedModule } from '@shared/shared.module';
+import { RegistrationService } from '@services/registration.service';
 
 
 @NgModule({
@@ -14,6 +14,8 @@ import { SharedModule } from '@shared/shared.module';
     RegistrationRoutingModule,
     SharedModule
   ],
-  providers: [RegistrationService]
+  providers: [
+    RegistrationService
+  ]
 })
 export class RegistrationModule { }

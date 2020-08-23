@@ -1,5 +1,9 @@
-export interface User {
-    role: string,
-    mobile: string,
-    password: string,
+export class User {
+
+    constructor(
+        public role: string,
+        public mobile: string,
+        public password: string,
+    ) { }
+
 }
