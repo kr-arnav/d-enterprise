@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, UrlTree } from '@angular/router';
-import { Observable } from 'rxjs';
 
-import { LocalstorageService } from '@services/localstorage.service';
-import { NavigatorService } from '@services/navigator.service';
+import { LocalstorageService } from '@services/localstorage/localstorage.service';
+import { NavigatorService } from '@services/navigation/navigator.service';
 
 @Injectable({
     providedIn: 'root'

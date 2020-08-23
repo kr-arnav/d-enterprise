@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { PersonalInformation } from '@models/index';
-import { NavigatorService } from '@services/navigator.service';
-import { PersonalService } from './personal.service';
+import { NavigatorService } from '@services/navigation/navigator.service';
+import { PersonalService } from '@services/personal/personal.service';
 
 @Component({
   selector: 'app-personal',

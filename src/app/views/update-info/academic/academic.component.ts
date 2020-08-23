@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { School } from '@models/sub-models';
 import { AcademicInformation } from '@models/user-academic-information.model';
-import { AcademicService } from './academic.service';
-import { NavigatorService } from '@services/navigator.service';
+import { AcademicService } from '@services/academic/academic.service';
+import { NavigatorService } from '@services/navigation/navigator.service';
 
 @Component({
   selector: 'app-academic',

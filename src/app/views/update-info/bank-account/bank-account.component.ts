@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { BankAccountInformation } from '@models/index';
-import { NavigatorService } from '@services/navigator.service';
-import { BankAccountService } from './bank-account.service';
+import { NavigatorService } from '@services/navigation/navigator.service';
+import { BankAccountService } from '@services/bank-account/bank-account.service';
 
 @Component({
   selector: 'app-bank-account',

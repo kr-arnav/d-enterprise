@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { environment } from '@environments/environment';
-import { LocalstorageService } from '@services/localstorage.service';
+import { LocalstorageService } from '@services/localstorage/localstorage.service';
 import { BankAccountInformation } from '@models/index';
 
 @Injectable({

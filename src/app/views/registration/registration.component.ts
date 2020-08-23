@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Button } from '@models/index';
-import { NavigatorService } from '@services/navigator.service';
+import { NavigatorService } from '@services/navigation/navigator.service';
 
 @Component({
   selector: 'app-registration',

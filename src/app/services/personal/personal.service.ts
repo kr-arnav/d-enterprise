@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { PersonalInformation } from '@models/index';
 import { environment } from '@environments/environment';
-import { LocalstorageService } from '@services/localstorage.service';
+import { LocalstorageService } from '@services/localstorage/localstorage.service';
 
 @Injectable({
   providedIn: 'root'

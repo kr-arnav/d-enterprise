@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeService } from './home.service';
+import { HomeService } from '@services/home/home.service';
 
-import { CardNowrap, CardWrap, Client, Carousel } from '../../models/index';
+import { CardNowrap, CardWrap, Client, Carousel } from '@models/index';
 
 @Component({
   selector: 'app-home',

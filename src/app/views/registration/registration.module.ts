@@ -5,7 +5,7 @@ import { RegistrationComponent } from './registration.component';
 import { FreelancerComponent } from './freelancer/freelancer.component';
 import { VendorComponent } from './vendor/vendor.component';
 import { SharedModule } from '@shared/shared.module';
-import { RegistrationService } from '@services/registration.service';
+import { RegistrationService } from '@services/registration/registration.service';
 
 
 @NgModule({

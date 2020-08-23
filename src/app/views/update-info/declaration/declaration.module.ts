@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { DeclarationRoutingModule } from './declaration-routing.module';
 import { DeclarationComponent } from './declaration.component';
-import { DeclarationService } from './declaration.service';
+import { DeclarationService } from '@services/declaration/declaration.service';
 import { SharedModule } from '@shared/shared.module';
 
 

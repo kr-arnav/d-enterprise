@@ -21,7 +21,7 @@ export class FooterComponent implements OnInit {
   developer: string = "Developed by Arnav Kumar (this.arnav@gmail.com)";
 
   constructor(
-    private footerService: FooterComponent
+    private footerService: FooterService
   ) { }
 
   ngOnInit(): void {

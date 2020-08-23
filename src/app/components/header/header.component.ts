@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 
-import { LocalstorageService } from '@services/localstorage.service';
-import { NavigatorService } from '@services/navigator.service';
+import { LocalstorageService } from '@services/localstorage/localstorage.service';
+import { NavigatorService } from '@services/navigation/navigator.service';
 
 @Component({
   selector: 'app-header',

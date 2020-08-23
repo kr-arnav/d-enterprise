@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 import { Button } from '@models/btn.model';
-import { NavigatorService } from '@services/navigator.service';
+import { NavigatorService } from '@services/navigation/navigator.service';
 
 @Component({
   selector: 'app-btn-push-layout',

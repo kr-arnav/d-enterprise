@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { LoginService } from '@services/login.service';
-import { LocalstorageService } from '@services/localstorage.service';
-import { NavigatorService } from '@services/navigator.service';
+import { LoginService } from '@services/login/login.service';
+import { LocalstorageService } from '@services/localstorage/localstorage.service';
+import { NavigatorService } from '@services/navigation/navigator.service';
 
 @Component({
   selector: 'app-login',

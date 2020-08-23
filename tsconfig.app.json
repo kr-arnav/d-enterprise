@@ -6,7 +6,7 @@
     "types": [],
     "baseUrl": "src",
     "paths": {
-      "@components/*": ["app/component/*"],
+      "@components/*": ["app/components/*"],
       "@directives/*": ["app/directives/*"],
       "@guards/*": ["app/guards/*"],
       "@layouts/*": ["app/layouts/*"],

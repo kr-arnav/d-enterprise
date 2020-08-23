@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { NavigatorService } from '@services/navigator.service';
-import { DeclarationService } from './declaration.service';
+import { NavigatorService } from '@services/navigation/navigator.service';
+import { DeclarationService } from '@services/declaration/declaration.service';
 import { AgreedTerms } from '@models/index';
 
 @Component({

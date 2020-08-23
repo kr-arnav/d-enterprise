@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ProfessionalInformation } from '@models/index';
-import { NavigatorService } from '@services/navigator.service';
-import { ProfessionalService } from './professional.service';
+import { NavigatorService } from '@services/navigation/navigator.service';
+import { ProfessionalService } from '@services/professional/professional.service';
 
 @Component({
   selector: 'app-professional',

@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RegistrationService } from '@services/registration.service';
-import { NavigatorService } from '@services/navigator.service';
 
 @Component({
   selector: 'app-vendor',
