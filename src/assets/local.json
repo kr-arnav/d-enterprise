@@ -1,0 +1,146 @@
+{
+    "contactPersons": [
+        {
+            "name": "Manu Kumar",
+            "contact": "9999999999",
+            "email": "enterprisesmr0@gmail.com",
+            "pan": "DDDDD0000D",
+            "gstn": "ALKFDJADFS"
+        }
+    ],
+    "locationsServed": [
+        { "name": "West Bengal (Kolkata" },
+        { "name": "Jharkhand (All)" },
+        { "name": "Bihar - (All)" },
+        { "name": "Assam - (All)" },
+        { "name": "Utter Pradesh - (All)" },
+        { "name": "Odisha (All)" }
+    ],
+    "clients": [
+        {
+            "name": "ABC Tech",
+            "imgUrl": "assets/abc.png"
+        },
+        {
+            "name": "Aptech",
+            "imgUrl": "assets/aptech.png"
+        },
+        {
+            "name": "CDAC",
+            "imgUrl": "assets/cdac.png"
+        },
+        {
+            "name": "Ediquity",
+            "imgUrl": "assets/ediquity.png"
+        },
+        {
+            "name": "Ginger",
+            "imgUrl": "assets/ginger.png"
+        },
+        {
+            "name": "Infosoft",
+            "imgUrl": "assets/infosoft.png"
+        },
+        {
+            "name": "Merittrac",
+            "imgUrl": "assets/merittrac.png"
+        },
+        {
+            "name": "NSE",
+            "imgUrl": "assets/nse.png"
+        },
+        {
+            "name": "SIFY",
+            "imgUrl": "assets/sify.png"
+        },
+        {
+            "name": "TCSION",
+            "imgUrl": "assets/tcsion-logo.png"
+        }
+    ],
+    "services": [
+        {
+            "imgUrl": "/assets/people_cd.jpg",
+            "title": "Hire People",
+            "body": "Some quick example text to build on the card title and make up the buil of the card's content",
+            "button": "Hire Now"
+        },
+        {
+            "imgUrl": "assets/venue_cd.jpg",
+            "title": "Book Venue",
+            "body": "Some quick example text to build on the card title and make up the buil of the card's content",
+            "button": "Book Now"
+        },
+        {
+            "imgUrl": "assets/gadgets_cd.jpg",
+            "title": "Outsource Gadgets",
+            "body": "Some quick example text to build on the card title and make up the buil of the card's content",
+            "button": "Outsource Now"
+        },
+        {
+            "imgUrl": "assets/price_cd.jpg",
+            "title": "Pricing",
+            "body": "Some quick example text to build on the card title and make up the buil of the card's content",
+            "button": "Show Prices"
+        }
+    ],
+    "domains": [
+        {
+            "imgUrl": "assets/ei.jpg",
+            "title": "Educational Institutions",
+            "icon": "fas fa-book"
+        },
+        {
+            "imgUrl": "assets/ei.jpg",
+            "title": "Govt & PSUs",
+            "icon": "fas fa-globe"
+        },
+        {
+            "imgUrl": "assets/univ.webp",
+            "title": "Colleges & Universities",
+            "icon": "fas fa-landmark"
+        },
+        {
+            "imgUrl": "assets/dist.jpg",
+            "title": "Distance Education",
+            "icon": "fa fa-handshake"
+        },
+        {
+            "imgUrl": "assets/cert.jpg",
+            "title": "Training & Certification",
+            "icon": "fas fa-sun"
+        },
+        {
+            "imgUrl": "assets/college.jpg",
+            "title": "Schools",
+            "icon": "fas fa-landmark"
+        },
+        {
+            "imgUrl": "assets/recruit.jpg",
+            "title": "Recruitment",
+            "icon": "fas fa-wallet"
+        },
+        {
+            "imgUrl": "assets/coaching.jpg",
+            "title": "Coaching Institutions",
+            "icon": "fa fa-handshake"
+        }
+    ],
+    "carousels": [
+        {
+            "imgUrl": "/assets/people_c.jpg",
+            "title": "People",
+            "body": "We supply Technical, IT, Proctor and invigilator manpower for online examination delivery process"
+        },
+        {
+            "imgUrl": "/assets/venue_c.jpg",
+            "title": "Examination Venue",
+            "body": "We arrange online & offline venues at EAST ZONE (Bihar, WB, Orrisa, Jharkhand & Assam) to conduct computer based examination"
+        },
+        {
+            "imgUrl": "/assets/gadgets_c.png",
+            "title": "Gadgets",
+            "body": "We provide server, laptop & camera On-demand availability."
+        }
+    ]
+}
