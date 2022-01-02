@@ -8,7 +8,6 @@ import { environment } from '@environments/environment';
 })
 export class NavigatorService {
 
-  jsonServerBaseUrl: string = environment.jsonServerUrl;
   privateprotectedRoutes: string[];
   constructor(
     private router: Router
