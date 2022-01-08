@@ -18,7 +18,7 @@ export class FooterComponent implements OnInit {
   // @Access: Public - Required to render in the template
   locationsServed: LocationServed[];
 
-  developer: string = "Developed by Arnav Kumar (this.arnav@gmail.com)";
+  developer: string = "Developed by BDSV PVT.LTD. (info@bdsv.in)";
 
   constructor() { }
 
